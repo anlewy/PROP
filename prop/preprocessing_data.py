@@ -72,7 +72,7 @@ if __name__ == '__main__':
 
     doc_idx_pool = []
     with DocumentDatabase(args.temp_dir) as docs, open(bert_tokenized_docs,'w') as fin:
-        with args.data_file.open(encoding='utf-8') as f:
+        with open(args.data_file, 'r', encoding='utf-8') as f:
             for line in tqdm(f, desc="Loading Dataset", unit=" lines"):
                 if args.corpus_name == 'msmarco':
                     if len(line) == 0 or len(line.split('\t'))!=4:
