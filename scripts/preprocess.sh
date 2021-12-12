@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 INPUT_FILE=./data/wiki_info
-Bert_MODEL_DIR=../bert-base-uncased-py
+Bert_MODEL_DIR=bert-base-uncased
 
 python -m prop.preprocessing_data \
     --corpus_name wikipedia \
