@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DATA_DIR=data/wiki_info/train
-Bert_MODEL_DIR=/data/maxinyu/bert-base-uncased-py
+Bert_MODEL_DIR=bert-base-uncased
 OUTPUT=pretrained_models/
 
 python -m run_pretraining \

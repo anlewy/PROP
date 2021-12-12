@@ -248,7 +248,7 @@ def generate_word_sets_from_document(docs, chunk_indexs, stem, rop_num_per_doc, 
                 rep_words = []
                 while len(rep_words) < rop_len:
                     wd = np.random.choice(list(normalized_prob_vocab),size=1,p=normalized_prob)[0]
-                    if words_kept_prob[wd] < np.random.rand():
+                    if wd not in words_kept_prob or words_kept_prob[wd] < np.random.rand():
                         continue
                     else:
                         rep_words.append(wd)

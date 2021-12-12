@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-DATA_DIR=data/wiki_info/bprop
-Bert_MODEL_DIR=/data/maxinyu/bert-base-uncased-py
+DATA_DIR=data/wiki_info/
+Bert_MODEL_DIR=bert-base-uncased
 
 
 python -m prop.multiprocessing_generate_pairwise_instances \
