@@ -1,0 +1,2 @@
+with open('./data/wiki_info/wiki_toy.data') as f:
+	print(f.read())
