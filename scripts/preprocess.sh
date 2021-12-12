@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-INPUT_FILE=./data/wiki_info
+INPUT_FILE=./data
 Bert_MODEL_DIR=bert-base-uncased
 
 python -m prop.preprocessing_data \
