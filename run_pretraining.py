@@ -396,9 +396,12 @@ def main():
     
     # Save the last model
     logging.info("** ** * Saving model ** ** * ")
+    logging.info('before model_to_save')
     model_to_save = model.module if hasattr(model, 'module') else model  # Only save the model it-self
     output_model_file = args.output_dir / "pytorch_model_last.bin"
+    logging.info('before save')
     torch.save(model_to_save.state_dict(), str(output_model_file))
+    logging.info('after save')
     writer.close()
 
 if __name__ == '__main__':
