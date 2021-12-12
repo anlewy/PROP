@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-DATA_DIR=data/wiki_info/bprop
+DATA_DIR=data/wiki_info/
 
-class="$1"
+class='prop'
 
 if [ $class == 'prop' ]
 then
