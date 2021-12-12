@@ -61,7 +61,7 @@ if __name__ == '__main__':
     parser.add_argument("--output_dir", type=Path, required=True)
     parser.add_argument("--temp_dir", type=str, default='./')
     parser.add_argument("--do_lower_case", action="store_true")
-    parser.add_argument("--stem", action="store_true")
+    parser.add_argument("--stem", type=bool, default=True)
     args = parser.parse_args()
     
     args.output_dir.mkdir(exist_ok=True)
